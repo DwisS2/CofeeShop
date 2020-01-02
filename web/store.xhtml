@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+         
+
+
+        <title>Home Page</title>
+        <link rel="stylesheet" type="text/css" href="css/Style.css"/>
+         
+    </h:head>
+    <h:body>
+        <div class="heading">It's a coffee-home</div>
+		<div class="heading2">Join Kopi  </div>
+                
+                
+                 <nav>
+                    <ul>
+                               <li><a href="home.xhtml">Home</a></li>
+				<li><a href="menu.xhtml">Menu</a></li>
+				<li><a href="store.xhtml">Store</a></li>
+                                <li><a href="#">About</a>
+                                <ul>
+                                    <li><a href="aboutus.xhtml">About Us</a></li>
+                                    <li><a href="contactus.xhtml">Contact Us</a></li>
+                                </ul>
+                                </li>
+                    </ul>
+                 </nav>
+                     
+                <div class="img2"> <img src="img/9.webp" />
+                                </div>
+                <br/>
+                <br/>
+                <br/>
+                  <div class="pading" style="padding-bottom: 400px;"></div>
+                <div class="judul">
+                    <h1>Location &amp; Hours</h1>
+                    <p>GOR BULUNGAN, Jl. Bulungan No.C1, RT.11/RW.7, Kramat Pela, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130</p>
+                     <div class="pading" style="padding-bottom: 40px;"></div>
+                     <p>
+                         Cafe Open:<br/>
+                         Monday to Saturday 7am to 6pm<br/>
+                         Sunday 9am to 2pm<br/>
+                         Kitchen closes one hour prior to the cafe.
+                         <br/><br/>
+                         Open later for events!
+                     </p>
+
+                </div>
+                  <div class="pading" style="padding-bottom: 250px;"></div>
+                  <div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(-6.21, 106.85),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+} 
+</script>
+
+                  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3eMRvoqRXbm2lU7H6CBDht7ZrM1wFwAU&amp;callback=myMap"></script>
+                  <div class="pading" style="padding-bottom: 250px;"></div>
+                    
+                    <div class="garis"><h1>WHAT'S ON THE MENU?</h1>
+                        <div  class="buton2"><a href="menu.xhtml"><button>Click Here</button></a></div>
+                        
+                        <div class="footer">
+		© 2019 Join Kopi. All rights reserved.
+	</div>
+</div>
+                    
+    </h:body>
+</html>
+

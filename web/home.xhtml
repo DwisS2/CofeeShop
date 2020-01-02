@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+         
+
+
+        <title>Home Page</title>
+        <link rel="stylesheet" type="text/css" href="css/Style.css"/>
+        
+    </h:head>
+    <h:body>
+        <div class="heading">It's a coffee-home</div>
+		<div class="heading2">Join Kopi  </div>
+                
+                
+                 <nav>
+                    <ul>
+                                <li><a href="home.xhtml">Home</a></li>
+				<li><a href="menu.xhtml">Menu</a></li>
+				<li><a href="store.xhtml">Store</a></li>
+                                <li><a href="#">About</a>
+                                <ul>
+                                    <li><a href="aboutus.xhtml">About Us</a></li>
+                                    <li><a href="contactus.xhtml">Contact Us</a></li>
+                                </ul>
+                                </li>
+                        
+                                <script type="text/javascript">
+                                var imgs1 = new Array("img/3.jpg","img/4.png","img/5.jpg");
+
+var currentAd1 = 0;
+var imgCt1 = 3;
+function cycle1() {
+if (currentAd1 == imgCt1) {
+currentAd1 = 0;
+}
+var banner1 = document.getElementById('adBanner1');
+banner1.src=imgs1[currentAd1]
+
+currentAd1++;
+}
+window.setInterval("cycle1()",4000);
+</script>
+
+                                <div class="img1"> <img src="img/3.jpg" id="adBanner1" border="0" width="1350px" height="600px" />
+                                </div>
+                                <div class="pading" style="padding-bottom: 800px;"></div>
+                                <div class="tengah"> <img src="img/6.jpg" width="670px" height="470px"/>
+                                    <h2>Amazing Cofee Happens Here</h2>
+                                    <p>Our process starts with one philosophy: a passion for crafting amazing decaffeinated coffee. Starting with small batches, we remove caffeine in a gentle, 100% chemical free process, so that whether it’s morning or night, you have the option of enjoying your favorite coffee without the caffeine. Because when you love coffee as much as we do, what you take out is just as important as what you leave in.</p>
+                                </div>
+		
+		<div class="pading" style="padding-bottom: 330px;"></div>
+                <div class="kanan"> <img src="img/7.jpg" width="670px" height="500px"/>
+                    <h2>What we're all about</h2>
+                    <p>At the end of the day, it all comes down to coffee. But to get there it takes a dedicated, knowledgeable team with a sustainable approach.</p>
+                    <br></br>
+                    <br></br>
+                    <div  class="buton"><a href=""><button>Learn More About Us</button></a></div>
+                    
+                    <div class="pading" style="padding-bottom: 330px;"></div>
+                    
+                    <div class="garis"><h1>WHAT'S ON THE MENU?</h1>
+                        <div  class="buton2"><a href="menu.xhtml"><button>Click Here</button></a></div>
+                        
+                        <div class="footer">
+		© 2019 Join Kopi. All rights reserved.
+	</div>
+</div>
+                    
+                                 </div>
+                    </ul>
+		</nav>
+    </h:body>
+</html>
